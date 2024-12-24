@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat House</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon" href="img/falicon.gif" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="img/logo1.png" alt="Cat House Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#products">Видруки</a></li>
+                    <li><a href="#complaints">Скарги та пропозиції</a></li>
+                    <li><a href="#news">Новини</a></li>
+                    <li><a href="#news" onclick="openModal('registrationModal')">Зареєструватися</a></li>
+                    <li><a href="#booking" onclick="openModal('bookingModal')">Бронювання столиків</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+
+
+        <div id="registrationModal" class="modal">
+            <div class="modal-content">
+                <div class="login-form">
+                    <h2>Увійти</h2>
+                    <form>
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="password" name="password" placeholder="Пароль">
+                        <button type="submit">Увійти</button>
+                        <div class="links">
+                            <a href="#">Забули пароль?</a>
+                            <a href="#">Реєстрація</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <!-- Модальне вікно для бронювання -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <h3>Бронювання столика</h3>
+            <form>
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="date">Дата та час:</label>
+                <input type="datetime-local" id="date" name="date" required><br>
+
+                <button type="submit">Забронювати</button>
+            </form>
+            <button class="modal-close" onclick="closeModal('bookingModal')">Закрити</button>
+        </div>
+    </div>
+
+        <div class="news">
+            <h2>Новини про кав'ярню</h2>
+            <div class="news-item">
+                <h3>Відкриття нового залу</h3>
+                <p>З радістю повідомляємо, що ми відкрили новий затишний зал! Більше місця для відвідувачів, щоб насолоджуватися кавою у компанії наших пухнастих друзів.</p>
+            </div>
+            <div class="news-item">
+                <h3>Щасливі години знижок</h3>
+                <p>Щодня з 10:00 до 12:00 отримуйте знижку 20% на всі напої. Ранок із котиками стане ще приємнішим!</p>
+            </div>
+            <div class="news-item">
+                <h3>Новий мешканець кав'ярні</h3>
+                <p>До нас приєднався новий котик на ім'я Сімба. Він обожнює гратися та чекатиме на ваші обійми!</p>
+            </div>
+            <div class="news-item">
+                <h3>Акція «Солодке задоволення»</h3>
+                <p>Замовляйте будь-який десерт разом із лате та отримуйте знижку 10%. Акція діє до кінця місяця.</p>
+            </div>
+            <div class="news-item">
+                <h3>Майстер-клас з латте-арту</h3>
+                <p>Приєднуйтесь до нашого майстер-класу, де ви зможете навчитися створювати красиві малюнки на каві. Захід відбудеться наступної суботи о 15:00.</p>
+            </div>
+            <div class="news-item">
+                <h3>Вечір живої музики</h3>
+                <p>Запрошуємо вас на вечір живої музики цієї п'ятниці. Пориньте у чарівну атмосферу з нашими музикантами та затишною компанією котиків.</p>
+            </div>
+            <div class="news-item">
+                <h3>Благодійний ярмарок</h3>
+                <p>Цієї неділі відбудеться благодійний ярмарок. Усі зібрані кошти підуть на допомогу безпритульним тваринам.</p>
+            </div>
+            <div class="news-item">
+                <h3>Спеціальне меню для котиків</h3>
+                <p>У нашому меню з'явилися спеціальні ласощі для котиків. Потіште своїх улюбленців смачненьким!</p>
+            </div>
+            <div class="news-item">
+                <h3>Конкурс «Фото з котиком»</h3>
+                <p>Візьміть участь у нашому фотоконкурсі! Зробіть фото з котиком у кав'ярні та викладіть його у соцмережах з хештегом #CatHouse. Найкращі фото отримають подарунки!</p>
+            </div>
+            <div class="news-item">
+                <h3>Дегустація кави</h3>
+                <p>Наступної середи запрошуємо вас на дегустацію авторської кави. Дізнайтесь більше про смаки та аромати вашого улюбленого напою.</p>
+            </div>
+            <div class="news-item">
+                <h3>Котячий день народження</h3>
+                <p>Цього місяця ми святкуємо день народження нашої Соні! Приходьте привітати та отримайте маленький сюрприз.</p>
+            </div>
+            <div class="news-item">
+                <h3>Книжковий вечір у кав'ярні</h3>
+                <p>Затишний вечір із книжками та гарячою кавою чекає на вас у четвер. Візьміть із собою улюблену книгу або оберіть одну з нашої колекції.</p>
+            </div>
+        </div>
+
+        <div class="cats-info">
+            <h2>Інформація про котиків</h2>
+            <div class="cat-item" onclick="openModal('modal1')">
+                <img src="img/cat1.jpg" alt="Котик Мурчик">
+                <h3>Мурчик</h3>
+            </div>
+            <div class="cat-item" onclick="openModal('modal2')">
+                <img src="img/cat2.jpg" alt="Котик Соня">
+                <h3>Соня</h3>
+            </div>
+            <div class="cat-item" onclick="openModal('modal3')">
+                <img src="img/cat3.jpg" alt="Котик Барсик">
+                <h3>Барсик</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <p>Номер телефону: XXX-XXX-XXXX</p>
+            <p>Електронна пошта компанії: email@example.com</p>
+        </div>
+    </footer>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <img src="img/cat1.jpg" alt="Котик Мурчик">
+            <h3>Мурчик</h3>
+            <p>Мурчик — найніжніший мешканець кав'ярні. Він обожнює спати біля вікна та ласувати вершками.</p>
+            <button class="modal-close" onclick="closeModal('modal1')">Закрити</button>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <img src="img/cat2.jpg" alt="Котик Соня">
+            <h3>Соня</h3>
+            <p>Соня — грайлива та енергійна. Її улюблена розвага — бігати за лазерною указкою.</p>
+            <button class="modal-close" onclick="closeModal('modal2')">Закрити</button>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <img src="img/cat3.jpg" alt="Котик Барсик">
+            <h3>Барсик</h3>
+            <p>Барсик — справжній король кав'ярні. Він любить спілкуватися з гостями та позувати для фото.</p>
+            <button class="modal-close" onclick="closeModal('modal3')">Закрити</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
